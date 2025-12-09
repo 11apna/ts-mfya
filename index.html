@@ -1,140 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
-   <!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1201102195296152');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1201102195296152&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>T0SS MAFIYA</title>
-
-<style>
-    *{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
-
-    body{
-        min-height:100vh;
-        background:url("https://wallpapers.com/images/hd/cricket-ground-background-3cn3vu7bh20qyotf.jpg") no-repeat center/cover;
-        display:flex;
-        align-items:center;
-        justify-content:center;
-        padding:14px;
-        color:#fff;
-        backdrop-filter: blur(4px);
-    }
-
-    .wrapper{
-        width:100%;
-        max-width:420px;
-        background:rgba(0,0,0,0.65);
-        border-radius:20px;
-        padding:22px 18px;
-        border:1px solid rgba(255,255,255,0.15);
-        box-shadow:0 10px 40px rgba(0,0,0,0.6);
-        text-align:center;
-        backdrop-filter: blur(8px);
-    }
-
-    .profile-img{
-        width:115px;height:115px;border-radius:50%;overflow:hidden;
-        margin:0 auto 14px;
-        border:3px solid rgba(255,255,255,0.5);
-        box-shadow:0 0 30px rgba(255,255,255,0.25);
-    }
-
-    .profile-img img{width:100%;height:100%;object-fit:cover}
-
-    h1{
-        font-size:26px;font-weight:700;
-        background:linear-gradient(90deg,#ffdf00,#ff4fff,#00eaff);
-        -webkit-background-clip:text;
-        color:transparent;
-    }
-
-    .points-box{
-        margin:16px auto;max-width:330px;display:flex;flex-direction:column;gap:10px;
-    }
-
-    .point{
-        background:rgba(255,255,255,0.07);
-        padding:11px 12px;font-size:14px;
-        border-radius:12px;
-        border:1px solid rgba(255,255,255,0.2);
-        backdrop-filter:blur(6px);
-    }
-
-    /* Your Button Style Applied */
-    .boton-elegante {
-        width:100%;
-        padding:15px 30px;
-        border:2px solid #ffffff;
-        background-color:#000000a8;
-        color:#ffffff;
-        font-size:1.2rem;
-        cursor:pointer;
-        border-radius:30px;
-        transition:all 0.4s ease;
-        outline:none;
-        position:relative;
-        overflow:hidden;
-        font-weight:bold;
-    }
-
-    .boton-elegante::after {
-      content:"";
-      position:absolute;
-      top:0;left:0;
-      width:100%;height:100%;
-      background: radial-gradient(circle,rgba(255,255,255,0.4) 0%,rgba(255,255,255,0) 70%);
-      transform:scale(0);
-      transition:transform .5s ease;
-    }
-
-    .boton-elegante:hover::after {transform:scale(4);}
-    .boton-elegante:hover {border-color:#ffdf00;background:#292929;}
-
-    .note{margin-top:12px;font-size:12px;color:#fff;opacity:.85;}
-
-    @media(max-width:480px){
-        .wrapper{padding:20px 16px;}
-        h1{font-size:22px;}
-        .boton-elegante{font-size:1rem;}
-    }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BK REPORTS™ - Join Us</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        electric: {
+                            400: '#00f0ff',
+                            500: '#00c2ff',
+                            600: '#0095ff',
+                        },
+                        neon: {
+                            400: '#bd00ff',
+                            500: '#a000ff',
+                            600: '#7d00ff',
+                        },
+                    },
+                    boxShadow: {
+                        'glow': '0 0 15px rgba(0, 242, 255, 0.5)',
+                        'glow-purple': '0 0 15px rgba(189, 0, 255, 0.5)',
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #0a0a1a 0%, #070714 100%);
+            min-height: 100vh;
+        }
+        .glass-card {
+            background: rgba(15, 20, 40, 0.6);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .countdown-box {
+            box-shadow: 0 0 30px rgba(0, 242, 255, 0.2);
+        }
+        .profile-ring {
+            box-shadow: 0 0 0 3px rgba(0, 242, 255, 0.5), 
+                        0 0 0 6px rgba(189, 0, 255, 0.3);
+        }
+        .glow-hover:hover {
+            box-shadow: 0 0 25px rgba(0, 242, 255, 0.6);
+        }
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(0, 242, 255, 0.4); }
+            70% { box-shadow: 0 0 0 15px rgba(0, 242, 255, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(0, 242, 255, 0); }
+        }
+        .tm-symbol {
+            font-size: 0.7em;
+            vertical-align: super;
+            margin-left: 2px;
+        }
+    </style>
 </head>
-
-<body>
-    <div class="wrapper">
-        <div class="profile-img">
-            <img src="https://d1yei2z3i6k35z.cloudfront.net/15439492/6934c75261d24_6170286499069365368.jpg">
+<body class="text-white flex items-center justify-center p-4">
+    <div class="container max-w-md mx-auto">
+        <!-- Profile Section -->
+        <div class="flex flex-col items-center mb-8 pt-6">
+            <div class="profile-ring rounded-full p-1 mb-4">
+                <img src="https://d1yei2z3i6k35z.cloudfront.net/13184094/69381ae7da01e_421142a7-f1b3-4b98-9593-bdad2fab5b19.jpeg" alt="BK REPORTS Profile" class="w-24 h-24 rounded-full object-cover">
+            </div>
+            <h1 class="text-2xl font-bold mb-1">BK REPORTS™<span class="tm-symbol">🔥</span></h1>
+            <div class="flex items-center text-electric-400">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users w-4 h-4 mr-1"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                <span>1.8M Followers</span>
+            </div>
         </div>
 
-        <h1>T0SS MAFIYA</h1>
-
-        <div class="points-box">
-            <div class="point">✨ Magical Cricket Predictions</div>
-            <div class="point">🎯 Accurate Match Forecasts</div>
-            <div class="point">📊 Expert Analysis & Insights</div>
+        <!-- Stats Section -->
+        <div class="grid grid-cols-3 gap-4 mb-8">
+            <div class="glass-card rounded-xl p-4 text-center border border-electric-500/20">
+                <div class="text-electric-400 font-bold text-2xl mb-1">158 942</div>
+                <div class="text-xs text-gray-300">Subscribers</div>
+            </div>
+            <div class="glass-card rounded-xl p-4 text-center border border-neon-500/20">
+                <div class="text-neon-400 font-bold text-2xl mb-1">2,156</div>
+                <div class="text-xs text-gray-300">Predictions</div>
+            </div>
+            <div class="glass-card rounded-xl p-4 text-center border border-electric-500/20">
+                <div class="text-electric-400 font-bold text-2xl mb-1">95%</div>
+                <div class="text-xs text-gray-300">Accuracy</div>
+            </div>
         </div>
 
-        <a href="https://t.me/+e1mv2wGzJpdiMTFl">
-            <button class="boton-elegante">Join Telegram Channel 🚀</button>
+        <!-- CTA Button -->
+        <a href="https://t.me/+e1mv2wGzJpdiMTFl" class="w-full bg-gradient-to-r from-electric-500 to-neon-500 hover:from-electric-600 hover:to-neon-600 text-white font-bold py-4 px-6 rounded-xl mb-8 glow-hover transition-all duration-300 flex items-center justify-center pulse no-underline">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-send w-5 h-5 mr-2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+            Join Telegram Channel
         </a>
 
-        <div class="note">Premium cricket insights & predictions</div>
+        <!-- Features -->
+        <div class="grid grid-cols-1 gap-4 mb-8">
+            <div class="glass-card rounded-xl p-5 border border-electric-500/20 hover:border-electric-500/40 transition-all duration-300">
+                <div class="flex items-center mb-2">
+                    <div class="bg-electric-500/20 p-2 rounded-lg mr-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock text-electric-400"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                    </div>
+                    <h3 class="font-bold">Pre-match Predictions</h3>
+                </div>
+                <p class="text-sm text-gray-300">Daily expert analysis before matches start with high win rate predictions.</p>
+            </div>
+            <div class="glass-card rounded-xl p-5 border border-neon-500/20 hover:border-neon-500/40 transition-all duration-300">
+                <div class="flex items-center mb-2">
+                    <div class="bg-neon-500/20 p-2 rounded-lg mr-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check-circle text-neon-400"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                    </div>
+                    <h3 class="font-bold">Transparent Results</h3>
+                </div>
+                <p class="text-sm text-gray-300">Full historical records of all predictions with verified outcomes.</p>
+            </div>
+            <div class="glass-card rounded-xl p-5 border border-electric-500/20 hover:border-electric-500/40 transition-all duration-300">
+                <div class="flex items-center mb-2">
+                    <div class="bg-electric-500/20 p-2 rounded-lg mr-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bell text-electric-400"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
+                    </div>
+                    <h3 class="font-bold">In-Play Alerts</h3>
+                </div>
+                <p class="text-sm text-gray-300">Live betting opportunities during matches with instant notifications.</p>
+            </div>
+        </div>
+
+        <!-- Countdown Timer -->
+        <div class="glass-card rounded-xl p-5 mb-8 text-center countdown-box">
+            <h3 class="font-bold mb-4 text-electric-400">Next Prediction In:</h3>
+            <div class="flex justify-center space-x-4">
+                <div class="flex flex-col items-center">
+                    <div class="bg-electric-500/20 rounded-lg p-3 w-16">
+                        <div id="days" class="text-2xl font-bold text-electric-400">00</div>
+                    </div>
+                    <div class="text-xs text-gray-300 mt-2">Days</div>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="bg-electric-500/20 rounded-lg p-3 w-16">
+                        <div id="hours" class="text-2xl font-bold text-electric-400">00</div>
+                    </div>
+                    <div class="text-xs text-gray-300 mt-2">Hours</div>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="bg-electric-500/20 rounded-lg p-3 w-16">
+                        <div id="minutes" class="text-2xl font-bold text-electric-400">00</div>
+                    </div>
+                    <div class="text-xs text-gray-300 mt-2">Minutes</div>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="bg-electric-500/20 rounded-lg p-3 w-16">
+                        <div id="seconds" class="text-2xl font-bold text-electric-400">00</div>
+                    </div>
+                    <div class="text-xs text-gray-300 mt-2">Seconds</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Note -->
+        <div class="text-center text-xs text-gray-400 mb-6">
+            <p>Join thousands of successful members in our premium Telegram channel</p>
+        </div>
     </div>
+
+    <script>
+        feather.replace();
+        
+        // Countdown Timer
+        function updateCountdown() {
+            const now = new Date();
+            const nextDay = new Date();
+            nextDay.setDate(now.getDate() + 1);
+            nextDay.setHours(14, 30, 0, 0);
+            
+            const diff = nextDay - now;
+            
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+            
+            document.getElementById('days').textContent = days.toString().padStart(2, '0');
+            document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+            document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+            document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+        }
+        
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+        
+        // Animation for cards on load
+        document.addEventListener('DOMContentLoaded', () => {
+            anime({
+                targets: '.glass-card',
+                translateY: [20, 0],
+                opacity: [0, 1],
+                duration: 800,
+                delay: anime.stagger(100),
+                easing: 'easeOutQuad'
+            });
+            
+            anime({
+                targets: '.profile-ring',
+                scale: [0.9, 1],
+                opacity: [0, 1],
+                duration: 800,
+                easing: 'easeOutElastic(1, .8)'
+            });
+        });
+    </script>
 </body>
 </html>
